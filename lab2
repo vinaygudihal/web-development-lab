@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h4> My first Javascript </h4>
+	<p id="para"> This is the first paragraph </p>
+	<button type="button" onclick='document.getElementById("para").innerHTML=Date()'>Click this</button>
+
+<br>
+
+	<p> In this case Javascript changes the value of the src (source) attribute of an image </p>
+
+	<img id="myImage" src='https://scx2.b-cdn.net/gfx/news/hires/2018/2-dog.jpg' style="width: 100px">
+	<br>
+
+	<button onclick="document.getElementByI('myImage').src='https://scx2.b-cdn.net/gfx/news/hires/2018/2-dog.jpg'"> Dog </button>
+	<button onclick="document.getElementByI('myImage').src='https://images.indianexpress.com/2019/04/cat_1200getty.jpg'"> Cat </button>
+
+<br>
+
+	<h2>Change Style</h2>
+
+	<p id="demo"> Javascript can change the style of a HTML element.</p>
+
+	<button type="button" onclick="document.getElementById('demo').style.fontSize='35px">Click Me!</button>
+<br>
+	
+	<h2>What can javascript do?</h2>
+
+	<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+	<button type="button" onclick="document.getElementById('demo').style.display='none/block'">Click Me!</button>
+
+<br>
+
+<head>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML="Paragraph changed.";
+		}
+	</script>
+</head>
+
+<h1>A Web Page</h1>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<br>
+
+<h2>External Javascript</h2>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p> (myFunction is stored in a n external file called "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+<br>
+
+<h2>My first web page</h2>
+<p>My first paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+	document.getElementById("demo").innerHTML=5+6;
+</script>
+
+</body>
+</html>
